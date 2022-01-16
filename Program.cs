@@ -1,6 +1,13 @@
+
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+
+// This line defines which port will be used for deployment. 
+// builder.WebHost.ConfigureKestrel(options => options.ListenLocalhost(9980));
+
+//builder.WebHost.UseUrls("http://localhost:9980");
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
